@@ -1,4 +1,6 @@
 package BitManipulation;
+//136. Single Number
+//https://leetcode.com/problems/single-number/
 
 //Q2. In an array every number appears twice and one number apears one,we have to find it?
 
