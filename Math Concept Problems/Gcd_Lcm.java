@@ -13,7 +13,7 @@ public class Gcd_Lcm {
 	static int gcdValue(int a,int b) {
 		if(a==0)
 			return b;
-		return gcdValue(b%a, a);
+		return gcdValue(a%b, a);
 	}
 	
 	static int lcmValue(int a,int b) {
