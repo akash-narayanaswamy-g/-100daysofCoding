@@ -6,13 +6,13 @@ public class RadixSort {
 
 	public static void main(String[] args) {
 		int[] arr= {4, 1, 3,-10,100,999,210, -9, 7};
-		RadixSort(arr);
+		RadixSort1(arr);
 		System.out.println(Arrays.toString(arr));
 
 	}
 	
 	//sorting based on number of digits
-	static void RadixSort(int[] arr) {
+	static void RadixSort1(int[] arr) {
 		
 		//checking for negative numbers
 		boolean isnegative=false;
