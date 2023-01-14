@@ -1,5 +1,6 @@
 package String_Problems;
 
+import java.util.*;
 
 //205. Isomorphic Strings
 //https://leetcode.com/problems/isomorphic-strings/description/
@@ -19,6 +20,8 @@ class Solution {
         return true;
         
     }
+    
+   
 }
 
 public class IsomorphicString {
@@ -27,6 +30,7 @@ public class IsomorphicString {
 		Solution obj=new Solution();
 		boolean b=obj.isIsomorphic("egg", "add");
 		System.out.println(b);
+		
 
 	}
 
