@@ -13,30 +13,22 @@ public class SortingtheSentence {
 
 	}
 	
-	public static String sortSentence2(String s) {
+	public static String sortSentence(String s) {
 		String[] arr=s.split(" ");
 		System.out.println(Arrays.toString(arr));
-		return "";
+		String[] ans=new String[arr.length+1];
+		for (int i = 0; i < arr.length; i++) {
+			int index=arr[i].length()-1;
+			
+			ans[arr[i].charAt(index)-'0']=arr[i].substring(0,index);
+			System.out.println(Arrays.toString(ans));
+		}
+		s="";
+		for (int i = 1; i < ans.length; i++) {
+			s+=ans[i]+" ";
+		}
+		return s;
         
     }
 	
-	 public static String sortSentence(String s) {
-	        String a[] = s.split(" ");
-	        int n = a.length;
-	        String b[] = new String[n];
-	        for(int i=0; i<n; i++)
-	        {
-	            int l = a[i].length();
-	            char p = a[i].charAt(l-1);
-	            int k = p - '0';
-	            b[k-1] = a[i].substring(0,l-1);
-	        }
-	        String str="";
-	        for(int i=0; i<n; i++)
-	        {
-	            str = str + b[i] + " ";
-	        }
-	        return str.trim();
-	    }
-
 }
