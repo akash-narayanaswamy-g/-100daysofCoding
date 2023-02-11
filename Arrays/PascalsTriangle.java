@@ -26,11 +26,10 @@ public class PascalsTriangle {
             }
             list.add(1);
             result.add(list);
-            ad=list;
+            ad=new ArrayList<>(list);
         }
 
     return result;
-
     }
 
 	
