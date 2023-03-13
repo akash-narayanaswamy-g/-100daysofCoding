@@ -41,6 +41,18 @@ class circLL{
 		
 	}
 	
+	public void insert(int val,int index) {
+		head=insert(val, index, head);
+	}
+	
+	private Node insert(int val,int index,Node node) {
+		if(index==0) {
+			Node temp=new Node(val, node);
+			return temp;
+		}
+		node.next=insert(val, index--, node);
+		return node;
+	}
 	
 	//deleting
 	public void delete(int val) {
@@ -91,6 +103,7 @@ public class CircularLinkedList {
 		obj.insertLast(0);
 		obj.display();
 		obj.delete(4);
+		obj.insert(100, 0);
 		obj.display();
 
 	}
