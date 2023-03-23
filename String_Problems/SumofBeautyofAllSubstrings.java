@@ -1,5 +1,7 @@
 package String_Problems;
 
+//1781. Sum of Beauty of All Substrings
+//https://leetcode.com/problems/sum-of-beauty-of-all-substrings/
 public class SumofBeautyofAllSubstrings {
 
 	public static void main(String[] args) {
@@ -23,7 +25,7 @@ public class SumofBeautyofAllSubstrings {
 					}
 				}
 				sum+=(max-min);
-        }
+			}
 		}
         return sum;
     }
